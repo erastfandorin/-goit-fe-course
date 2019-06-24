@@ -7,8 +7,8 @@
 }
 
 body {
-    height: 1838px;
-    width: 1647px;
+    height: 1455px;
+    width: 1601px;
 }
 
 /* menu */
@@ -18,7 +18,7 @@ body {
     content: '';
     display: table;
     clear: both;
-    background-color: #323232;
+    /*background-color: #323232;*/
 }
 
 .logo {
