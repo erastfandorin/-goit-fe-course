@@ -4,32 +4,25 @@
   box-sizing: border-box;
 }
 
-/* montserrat-regular - latin */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url(../font/montserrat-v13-latin-regular.woff)
+  src: url(../font/montserrat-v13-latin-regular.woff);
 }
 
 @font-face {
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 400;
-  src: url(../font/roboto-slab-v8-latin-regular.woff)
+  src: url(../font/roboto-slab-v8-latin-regular.woff);
 }
-
 
 body {
   font-family: Roboto Slab;
   font-size: 14px;
   color: #333333;
 }
-
-
-
-
-
 
 .container {
   width: 1400px;
@@ -39,7 +32,6 @@ body {
 
 .header {
   justify-content: space-between;
-  align-items: center;
   width: 933px;
   height: 22px;
   display: flex;
@@ -49,6 +41,7 @@ body {
 
 .navigation {
   display: flex;
+  width: 480px;
 }
 
 .menu {
@@ -63,13 +56,10 @@ body {
   font-weight: bold;
 }
 
-.menu_item {
-  position: relative;
-}
-
 .link {
   text-transform: uppercase;
   text-decoration: none;
+  color: #222222;
   transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: linear;
@@ -89,21 +79,16 @@ body {
   color: #222222;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: Montserrat-Bold, AdobeInvisFont, MyriadPro-Regular;
+  font-family: Roboto Slab;
   margin-bottom: 19px;
 }
-
-.headlin_1:nth-child(2) {
-    color: #FFFFFF;
-}
-
 
 .headlin_text {
   font-size: 16px;
   color: #777777;
   text-align: center;
   font-style: italic;
-  font-family: KaushanScript-Regular, AdobeInvisFont, MyriadPro-Regular;
+  font-family: ;
 }
 
 .services {
@@ -170,21 +155,17 @@ body {
 .services_text {
   font-size: 13px;
   color: #999999;
-  
 }
 
 .section_2 {
   background-color: #222222;
   padding-bottom: 20px;
-    
 }
 
 .background_image {
-  
   background-image: url(../img/Map.png);
   background-repeat: no-repeat;
   background-position: right bottom;
-  
   padding-bottom: 100px;
 }
 
@@ -207,7 +188,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 
 .box {
@@ -217,9 +197,7 @@ body {
     height: 214px;
     justify-content: space-between;
     margin-right: 28px;
-    
 }
-
 
 .form input[name="name"] {
     width: 456px;
@@ -275,8 +253,6 @@ body {
 .form textarea:invalid {
   outline: 1px solid red;
 }
-
-
 
 .button {
     width: 241px;
