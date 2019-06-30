@@ -135,7 +135,7 @@ body {
 
 .partner_item::after {
   position: absolute;
-  background-image: url(../../img/icon/icon_tv.png);
+  background-image: url(../img/icon/icon_tv.png);
   background-position: center;
   content: "";
   top: 32%;
@@ -145,16 +145,16 @@ body {
 }
 
 .partner_item:nth-child(2)::after {
-  background-image: url(../../img/icon/icon_lab.png);
+  background-image: url(../img/icon/icon_lab.png);
   top: 28%;
 }
 
 .partner_item:nth-child(3)::after {
-  background-image: url(../../img/icon/icon_coffe.png);
+  background-image: url(../img/icon/icon_coffe.png);
 }
 
 .partner_item:nth-child(4)::after {
-  background-image: url(../../img/icon/icon_message.png);
+  background-image: url(../img/icon/icon_message.png);
 }
 
 .partner_hedline {
