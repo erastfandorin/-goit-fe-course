@@ -28,7 +28,7 @@ body {
 }
 
 .header {
-  background-image: url(../module08/img/background_mobile.png);
+  background-image: url(../img/background_mobile.png);
   height: 540px;
   background-repeat: no-repeat;
 }
@@ -135,7 +135,7 @@ body {
 
 .partner_item::after {
   position: absolute;
-  background-image: url(../module08/img/icon/icon_tv.png);
+  background-image: url(../../img/icon/icon_tv.png);
   background-position: center;
   content: "";
   top: 32%;
@@ -145,16 +145,16 @@ body {
 }
 
 .partner_item:nth-child(2)::after {
-  background-image: url(../module08/img/icon/icon_lab.png);
+  background-image: url(../../img/icon/icon_lab.png);
   top: 28%;
 }
 
 .partner_item:nth-child(3)::after {
-  background-image: url(../module08/img/icon/icon_coffe.png);
+  background-image: url(../../img/icon/icon_coffe.png);
 }
 
 .partner_item:nth-child(4)::after {
-  background-image: url(../module08/img/icon/icon_message.png);
+  background-image: url(../../img/icon/icon_message.png);
 }
 
 .partner_hedline {
@@ -177,7 +177,7 @@ body {
   }
 
   .header {
-    background-image: url(../module08/img/background_tablet.png);
+    background-image: url(../img/background_tablet.png);
     padding-bottom: 234px;
     width: 768px;
     height: 700px;
@@ -251,7 +251,7 @@ body {
   }
 
   .header {
-    background-image: url(../module08/img/background_desktop.png);
+    background-image: url(../img/background_desktop.png);
     width: 1440px;
     height: 700px;
   }
@@ -264,6 +264,8 @@ body {
     width: 914px;
     height: 300px;
   }
+
+  
 
   .partner_item:nth-child(1) {
     order: 1;
