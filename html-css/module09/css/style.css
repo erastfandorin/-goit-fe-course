@@ -1,0 +1,202 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "MontserratB";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/montserrat-v13-latin-700.woff2") format("woff2"),
+    url("../font/montserrat-v13-latin-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MontserratR";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/montserrat-v13-latin-regular.woff2") format("woff2"),
+    url("../font/montserrat-v13-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "RobotoL";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../font/roboto-v19-latin-300.woff2") format("woff2"),
+    url("../font/roboto-v19-latin-300.woff") format("woff");
+}
+
+@font-face {
+  font-family: "RobotoR";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/roboto-v19-latin-regular.woff2") format("woff2"),
+    url("../font/roboto-v19-latin-regular.woff") format("woff");
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/background_mobile.png);
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 139px;
+  padding-top: 21px;
+}
+
+.nav {
+  padding-bottom: 115px;
+}
+
+.button {
+  color: #fff;
+  border: 0;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 20px;
+  font-family: MontserratB;
+}
+
+.button_log_in {
+  margin-right: 20px;
+}
+
+.button_sign_in {
+  border: 2px solid #fff;
+  width: 90px;
+  height: 36px;
+}
+
+.logo {
+  font-family: MontserratB;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 38px;
+}
+
+.hedline_text {
+  font-family: MontserratB;
+  text-align: center;
+  color: #fff;
+  font-size: 29px;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+
+.page_text {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 19px;
+  font-family: RobotoL;
+  width: 217px;
+}
+
+.button_find {
+  background-color: #ff4e50;
+  width: 280px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.our-team {
+  padding-top: 68px;
+  padding-bottom: 57px;
+}
+
+.our-team_hedline {
+  text-align: center;
+  font-size: 22px;
+  font-family: MontserratB;
+  padding-bottom: 14px;
+}
+
+.our-team_item {
+  max-width: 220px;
+  text-align: center;
+  position: relative;
+}
+
+.img_fix {
+  width: 121px;
+  height: 121px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.img_fix::after {
+  position: absolute;
+  background-image: url(../img/icon/icon_tv.png);
+  content: "";
+  top: 32%;
+  left: 60%;
+  width: 41px;
+  height: 41px;
+}
+
+.our-team_list > div > div:nth-of-type(2) .img_fix::after {
+  background-image: url(../img/icon/icon_lab.png);
+}
+
+.our-team_list > div > div:nth-of-type(3) .img_fix::after {
+  background-image: url(../img/icon/icon_coffe.png);
+}
+
+.our-team_list > div > div:nth-of-type(4) .img_fix::after {
+  background-image: url(../img/icon/icon_message.png);
+}
+
+.our-team_name {
+  font-family: MontserratB;
+  font-size: 14px;
+}
+
+.our-team_text {
+  font-family: RobotoL;
+  font-size: 14px;
+}
+
+.button_other {
+  border: 2px solid #ff4e50;
+  color: #ff4e50;
+  width: 280px;
+  height: 40px;
+  line-height: 35px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../img/background_tablet.png);
+    padding-bottom: 234px;
+  }
+
+  .our-team_list {
+    max-width: 560px;
+  }
+
+  .page_text {
+    width: 398px;
+  }
+
+  .nav {
+    padding-bottom: 160px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../img/background_desktop.png);
+  }
+
+  .our-team_list {
+    max-width: 960px;
+  }
+}
