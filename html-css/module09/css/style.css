@@ -47,8 +47,8 @@
   padding-top: 21px;
 }
 
-.nav {
-  padding-bottom: 115px;
+.header__nav {
+  margin-bottom: 115px;
 }
 
 .button {
@@ -63,13 +63,18 @@
 }
 
 .button_log_in {
+  width: 90px;
+  height: 36px;
   margin-right: 20px;
 }
 
 .button_sign_in {
-  border: 2px solid #fff;
   width: 90px;
   height: 36px;
+}
+
+.button_sign_in:hover, .button_log_in:hover {
+  border: 2px solid #fff;
 }
 
 .logo {
@@ -159,6 +164,15 @@
 .our-team_text {
   font-family: RobotoL;
   font-size: 14px;
+  margin-bottom: 0;
+}
+
+.our-team .row:nth-of-type(2) [class*=col-]:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.our-team .row:nth-of-type(2) {
+  margin-bottom: 20px;
 }
 
 .button_other {
@@ -174,6 +188,18 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(../img/background_tablet.png);
     padding-bottom: 234px;
+  }
+
+  .header__nav {
+    margin-bottom: 0;
+  }
+
+  .header .row:first-of-type {
+    margin-bottom: 60px;
+  }
+
+  .logo {
+    margin-bottom: 0;
   }
 
   .our-team_list {
@@ -193,6 +219,9 @@
     font-size: 52px;
   }
 
+  .our-team .row:nth-of-type(2) [class*=col-]:nth-of-type(2n +2) {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -201,7 +230,23 @@
       url(../img/background_desktop.png);
   }
 
+  .header .row:first-of-type {
+    margin-bottom: 100px;
+  }
+
   .our-team_list {
     max-width: 960px;
+  }
+
+  .nav {
+    padding-bottom: 0;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .our-team .row:nth-of-type(2) [class*=col-]:nth-of-type(n + 1) {
+    margin-bottom: 0;
   }
 }
