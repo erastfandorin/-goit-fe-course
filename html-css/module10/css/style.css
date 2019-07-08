@@ -47,28 +47,24 @@
 
 .container {
   width: 100%;
+  max-width: 1200px;
   height: auto;
   margin: 0 auto;
   padding: 0;
 }
 
 .header {
-    background: url(../img/banner.jpg) no-repeat;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-bottom: 230px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
   .header {
     background: url(../img/banner@2x.png) no-repeat;
   }
-}
-
-.header-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 0px;
 }
 
 .header-navigation {
@@ -78,10 +74,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 164px;
-  width: 53.95%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 164px;
 }
 
 .header-logo {
@@ -242,7 +235,6 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style-type: none;
-  width: 61.25%;
   height: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -330,7 +322,6 @@
   margin-top: 91px;
   margin-left: auto;
   margin-right: auto;
-  width: 62.76%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,7 +467,6 @@
 }
 
 .footer {
-  width: 62.5%;
   border-top: 1px solid #999999;
   line-height: 60px;
   margin-left: auto;
